@@ -20,6 +20,6 @@ use App\Http\Controllers\ContactController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/Home', [HomeController::class, 'index']);
-Route::get('/Artikel', [ArtikelController::class, 'index']);
-Route::get('/Contact us', [ContactController::class, 'index']);
+Route::get('/home', [HomeController::class, 'index']);
+Route::get('/home/contact', [HomeController::class, 'toContact']);
+Route::get('/home/artikel', [HomeController::class, 'toArtikel']);
